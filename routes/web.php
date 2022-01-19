@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::get('/management', function () {
+    return view('management.index');
+});
+
+
+Route::resource('/management/category', 'management\categoryController');
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
