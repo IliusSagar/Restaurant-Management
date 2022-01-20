@@ -24,6 +24,8 @@ Route::get('/management', function () {
 
 Route::resource('/management/category', 'management\categoryController');
 
+Route::resource('/management/menu', 'management\menuController');
+
 
 
 
